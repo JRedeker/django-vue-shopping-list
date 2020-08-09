@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+
+{% block content %}
+
+<div id="app">
+    <hello-world msg="Hello from Django and Vue!"></hello-world>
+</div>
+
+{% render_bundle 'chunk-common' %}
+{% render_bundle 'main' %}
+
+{% endblock content %}
