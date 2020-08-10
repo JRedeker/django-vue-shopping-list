@@ -1,0 +1,50 @@
+-   model: app.color
+    pk: 1
+    fields:
+        name: green
+        hex_value: 4CAF50
+-   model: app.color
+    pk: 1
+    fields:
+        name: blue
+        hex_value: 2196F3
+-   model: app.icon
+    pk: 1
+    fields:
+        icon_name: local_grocery_store
+-   model: app.icon
+    pk: 2
+    fields:
+        icon_name: checkroom
+-   model: app.category
+    pk: 1
+    fields:
+        name: Grocery
+-   model: app.category
+    pk: 2
+    fields:
+        name: Clothes
+-   model: app.item
+    pk: 1
+    fields:
+        name: Bananas
+        category: 1
+        notes:
+-   model: app.item
+    pk: 2
+    fields:
+        name: Coffee
+        category: 1
+        notes: Whole bean, dark roast
+-   model: app.item
+    pk: 3
+    fields:
+        name: Frozen Pizza
+        category: 1
+        notes: Pepperoni, whatever is on sale
+-   model: app.item
+    pk: 4
+    fields:
+        name: Sweater
+        category: 2
+        notes: Grey, size large

@@ -7,7 +7,7 @@ import environ
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # django_vue_shopping_list/
-APPS_DIR = ROOT_DIR / "django_vue_shopping_list"
+APPS_DIR = ROOT_DIR / "django_vue_shopping_list" / "django_vue_shopping_list"
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
@@ -81,6 +81,7 @@ LOCAL_APPS = [
     "django_vue_shopping_list.users.apps.UsersConfig",
     "django_vue_shopping_list.webpack_bundle.apps.WebpackBundleConfig",
     "fruit.apps.FruitConfig",
+    "shopping.apps.ShoppingConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

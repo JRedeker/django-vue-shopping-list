@@ -1,4 +1,4 @@
-# django-vue-shopping-list
+# django_vue_shopping_list
 
 
 # Instructions

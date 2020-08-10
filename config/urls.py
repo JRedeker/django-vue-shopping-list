@@ -13,6 +13,8 @@ urlpatterns = [
     ),
     # Fruit demo
     path("fruits/", include("fruit.urls", namespace="fruits")),
+    # Shopping List
+    path("shopping/", include("shopping.urls", namespace="shopping")),
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # User management

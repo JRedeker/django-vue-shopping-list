@@ -21,9 +21,8 @@ module.exports = {
     pages: pages,
     filenameHashing: true,
     productionSourceMap: false,
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/static/vue'
-        : 'http://localhost:8080/',
+    publicPath: process.env.NODE_ENV === 'production' ?
+        '/static/vue' : 'http://localhost:8080/',
     outputDir: '../django_vue_shopping_list/static/vue/',
 
     chainWebpack: config => {
@@ -76,10 +75,9 @@ module.exports = {
             .host('localhost')
             .port(8080)
             .hotOnly(true)
-            .watchOptions({poll: 1000})
+            .watchOptions({ poll: 1000 })
             .https(false)
-            .headers({"Access-Control-Allow-Origin": ["*"]})
+            .headers({ "Access-Control-Allow-Origin": ["*"] })
 
     }
-};   
-    
+};
